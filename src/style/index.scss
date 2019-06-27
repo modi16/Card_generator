@@ -1,0 +1,62 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+body {
+  background: green;
+  box-sizing: border-box;
+}
+
+.card {
+  display: block;
+  width: 400px !important;
+  height: 550px;
+  background: white;
+  text-align: center;
+  font-size: 200px;
+  border-radius: 25px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    float: left;
+    font-size: 80px;
+    padding-left: 10px;
+  }
+
+  &:after {
+    float: right;
+    font-size: 80px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    transform: rotate(180deg);
+  }
+
+  &.heart:before,
+  &.heart:after {
+    content: "\2665";
+    color: red;
+  }
+
+  &.spade:before,
+  &.spade:after {
+    content: "\2660";
+    color: black;
+  }
+
+  &.shamrock:before,
+  &.shamrock:after {
+    content: "\2663";
+    color: black;
+  }
+
+  &.diamond:before,
+  &.diamond:after {
+    content: "\2666";
+    color: red;
+  }
+}
+
+p {
+  align-items: center;
+  justify-content: center;
+}
